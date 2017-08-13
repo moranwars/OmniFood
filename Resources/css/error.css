@@ -1,0 +1,156 @@
+/*----------------------------------------------------------------*/
+/*--------------------------BASIC SETUPS--------------------------*/
+/*----------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/*--------------------------REUSABLE COMPONENTS--------------------------*/
+
+html{
+    background-color: #ffff;
+    Color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}   
+body{
+    overflow-x: hidden;
+} 
+
+.clearfix{zoom:1}
+.clearfix:after{  
+    content:'.';
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+.row { 
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px; 
+}
+
+h1{
+    font-size:600%;
+    font-weight: 100;
+    color: #ffffff;
+    margin:0;
+}
+
+h2{
+  color:#fff;
+    font-weight: 100;
+    font-size:250%;
+    margin-bottom: 20px;
+}
+
+
+h3{
+    font-size: 110%;
+    margin-bottom: 10px;
+    word-spacing: normal;
+    color:#F7CA18;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited{
+    display:inline-block;
+    padding: 15 40;
+    text-decoration: none;
+    font-weight: 300;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}   
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #F7CA18;
+    border-radius: 5px;
+    color: #555;
+    border: 1px solid #F7CA18;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #e5b808;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    color: #555;
+    border: 1px solid #d5ab07; 
+
+}
+
+
+
+
+
+/*--------------------------HEADER--------------------------*/
+
+header{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("img/burger-food-vegetable.jpg");
+  background-position: center;
+  background-size: cover;
+  height:100vh; 
+  background-attachment: fixed;
+}
+
+.new-text{
+   text-align: center; 
+    margin:45 0 0 0;
+    
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left; 
+    margin-top: 30px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 60px;  
+}
+    
+.main-nav li a:link,
+.main-nav li a:visited { 
+    padding: 6px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active { 
+  border-bottom: 2px solid #F7CA18;
+    
+}   
